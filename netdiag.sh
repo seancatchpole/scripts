@@ -1,8 +1,5 @@
 #!/bin/bash
 
-user=$(whoami)
-output=/home/$user/netdiag_output.txt
-
 exec > >(tee netdiag_output.txt) 2>&1
 
 ifconfig 
